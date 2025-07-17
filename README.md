@@ -16,9 +16,9 @@ Responsive design (mobile, tablet, desktop)
 # 🛠️ Built With
 - HTML5
 
-- CSS3 / Tailwind CSS / Bootstrap (choose based on what you used)
+- CSS3
 
-- JavaScript (if used)
+- JavaScript
 
 # 🎱 framework : 
 
