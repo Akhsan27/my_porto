@@ -36,11 +36,11 @@
         <div class="wrapper">
             <div class="home-about">
                 <h2 class="heading-2">Hello, I am Akhsan</h2>
-                <p class="paragraph">I am a Full-Stack Web Developer with experience in web development using HTML, CSS,
+                <p class="paragraph">I am a Junior Full-Stack Web Developer with experience in web development using HTML, CSS,
                     JavaScript, and PHP. I am also familiar with popular frameworks such as Bootstrap, Tailwind CSS, and
                     Laravel to build responsive user interfaces and functional web applications.
                 </p>
-                <a href="assets/CV Muhammad Akhsanil Umam.pdf" class="button" download><img src="assets/substans.svg" alt="Doc" style="margin-right: 2px;">Download
+                <a href="assets/CV Programing - inggris.pdf" class="button" download><img src="assets/substans.svg" alt="Doc">Download 
                     Cv</a>
             </div>
             <div class="home-image">
@@ -49,7 +49,7 @@
         </div>
     </section>
     <section id="motto">
-        <div class="wrapper">
+        <div class="wrapper model">
             <div style="width: 100%;">
                 <div class="sub-judul">
                     <span>What Do I Offer ?</span>
@@ -82,7 +82,7 @@
     </section>
     <section id="skills">
         <div class="wrapper">
-            <div style="width: 100%;">
+            <div>
                 <div class="judul">
                     <h2 class="heading-2">Technical Skills & Proficiency Levels</h2>
                 </div>
@@ -92,27 +92,35 @@
                         strengths.</span>
                 </div>
 
-                <div class="skill">
-                    <h3>HTML</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%;">80%</div>
+                <div class="skill wrapper">
+                    <div class="card-skill">
+                        <img src="assets/img/1.png" alt="HTML">
+                        <h3>HTML</h3>
                     </div>
-
-                    <h3>CSS</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 70%;">70%</div>
+                    <div class="card-skill">
+                        <img src="assets/img/2.png" alt="HTML">
+                        <h3>CSS</h3>
                     </div>
-
-                    <h3>JavaScript</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 60%;">60%</div>
+                   <div class="card-skill">
+                        <img src="assets/img/6.png" alt="HTML">
+                        <h3>JavaScript</h3>
                     </div>
-                    <h3>PHP</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 50%;">50%</div>
+                    <div class="card-skill">
+                        <img src="assets/img/3.png" alt="HTML">
+                        <h3>PHP</h3>
                     </div>
+                    <div class="card-skill">
+                        <img src="assets/img/4.png" alt="HTML">
+                        <h3>LARAVEL</h3>
+                    </div>
+                    <div class="card-skill">
+                        <img src="assets/img/5.png" alt="HTML">
+                        <h3>Tailwindcss</h3>
+                    </div>
+                    
                 </div>
-            </div>
+                </div>
+        </div>
     </section>
     <section id="project">
         <div class="wrapper">
@@ -134,6 +142,30 @@
                             groups regions into three categories: low (C1), medium (C2), and high (C3) production
                             levels, helping users easily identify agricultural performance across areas.</p>
                             <a href="https://codedbyumam.my.id/">Views Project</a>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <div class="">
+                        <img src="assets/project/resto.png" alt="Project 1">
+                    </div>
+                    <div class="project-title">
+                        <h3>Restoran Online</h3>
+                            <p>Website ini adalah platform pemesanan makanan berbasis web yang memudahkan pelanggan untuk melihat menu, 
+                            memilih hidangan favorit, dan melakukan pemesanan secara cepat. Dengan tampilan yang sederhana dan responsif, 
+                            pengguna dapat langsung memesan makanan dari mana saja, serta menikmati pengalaman kuliner yang lebih praktis dan menyenangkan.</p>
+                            <a href="https://codedbyumam.my.id/resto">Views Project</a>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <div class="">
+                        <img src="assets/project/toko-jilbab.png" alt="Project 1">
+                    </div>
+                    <div class="project-title">
+                        <h3>Toko Baju Muslim</h3>
+                            <p>Website ini adalah platform toko online baju muslim yang memudahkan pelanggan untuk melihat koleksi terbaru, 
+                            memilih busana favorit, dan melakukan pembelian dengan cepat. Dengan tampilan yang modern dan responsif, 
+                            pengguna dapat berbelanja dari mana saja serta menikmati pengalaman belanja yang praktis dan nyaman.</p>
+                            <a href="https://codedbyumam.my.id/gomuslim">Views Project</a>
                     </div>
                 </div>
             </div>
@@ -216,12 +248,29 @@
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        //animasi semua isi body
+          window.addEventListener("load", () => {
+    document.body.animate(
+      [
+        { opacity: 0, transform: "translateY(50px)" }, // posisi awal
+        { opacity: 1, transform: "translateY(0)" }     // posisi akhir
+      ],
+      {
+        duration: 1000,   // durasi animasi 1 detik
+        easing: "ease-out",
+        fill: "forwards" // tetap di kondisi akhir
+      }
+    );
+  });
+
+
         const menuBtn = document.getElementById('menu-toggle')
         const navMenu = document.getElementById('nav-menu')
 
         menuBtn.addEventListener('click', () => {
             navMenu.classList.toggle('show')
         });
+
     </script>
 </body>
 
